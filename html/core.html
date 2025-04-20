@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="core.css" type="text/css">
+        <link rel="stylesheet" href="./vendor/animations.css" />
+        <link href="./vendor/bootstrap.css" rel="stylesheet">
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <link href="./vendor/select2.css" rel="stylesheet">
+        <script src="./vendor/select2.js"></script>
+    </head>
+<body>
+    <div id="identity_manager">
+        <div class="d-flex h-100">
+            <div class="block_ui my-auto ms-auto d-flex flex-column animate__animated  animate__fadeIn text-light">
+                <div class="container m-auto">
+
+                    <div class="row">
+                        <div class="col-lg-8">
+
+                            <h4 class="welcome ms-2">Welcome to <b>infinitycore Framework</b></h4>
+                            <h1 class="mb-5 ms-2">Make your character</h1>
+
+                            <section class="container">
+                                <form id="form_register" class="row">
+
+                                    <div class="col-lg-5">
+                                        <div class="d-flex flex-column">
+                                            <label for="firstname" class="form-label">Firstname</label>
+                                            <input class="input_identity w-100" type="text" id="firstname" name="firstname" placeholder="Ex: Sierra" value="" minlength="4" maxlength="25" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-5">
+                                        <div class="d-flex flex-column">
+                                            <label for="lastname" class="form-label">Lastname</label>
+                                            <input class="input_identity  w-100" type="text" id="lastname" name="lastname" placeholder="Ex: Leone" value="" minlength="4" maxlength="25" required>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="col-lg-2">
+                                        <div class="d-flex flex-column">
+                                            <label for="years" class="form-label">Years</label>
+                                            <input class="input_identity w-100" type="number" id="years" name="years" placeholder="43" value="" min="18" max="100" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="d-flex flex-column my-4">
+                                            <label for="nationality" class="form-label">Nationality</label>
+                                            <select class="js-example-basic-single input_identity w-100" id="nationality" name="nationality" value="" minlength="4" maxlength="25" required>
+                                                <option value="united-states-of-america">United States Of America</option>
+                                                <option value="mexicain">Mexicain</option>
+                                                <option value="european">European</option>
+                                                <option value="asian">Asian</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-6">
+                                        <div class="d-flex flex-column my-4">
+                                            <label for="sex" class="form-label">Sex </label>
+                                            <select class="js-example-basic-single input_identity w-100" id="sex" name="sex" value="" minlength="4" maxlength="6" required>
+                                                <option value="male">Male</option>
+                                                <option value="female">Female</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <button class="make_history w-100">Make my history</button>
+                                    </div>
+                                    
+                                </form>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clip"></div>
+    </div>
+    <script src="./core.js" type="text/javascript"></script>
+    <script> 
+        $(document).ready(function() {
+            $('.js-example-basic-single').select2();
+        });
+    </script>
+</body>
+</html>
