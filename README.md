@@ -16,13 +16,13 @@ Advanced identity creation and management module for RedM, developed by Shepard 
 1. Place this folder in your server's `resources` directory.
 2. Add the resource to your `server.cfg`:
    ```
-ensure oxmysql              # Module SQL
-ensure infinity_core          # Module Framework core
-ensure infinity_skin          # Module Skin (skins)
-ensure infinity_chars         # Module Multichars (verif accounts and multichars)
-
-ensure infinity_needs         # Module Metabolism, inventory (inventory and metabolism)
-ensure infinity_identity      # Module Identity (identity, skin and login)
+      ensure oxmysql              # Module SQL
+      ensure infinity_core          # Module Framework core
+      ensure infinity_skin          # Module Skin (skins)
+      ensure infinity_chars         # Module Multichars (verif accounts and multichars)
+      
+      ensure infinity_needs         # Module Metabolism, inventory (inventory and metabolism)
+      ensure infinity_identity      # Module Identity (identity, skin and login)
    ```
 3. Make sure [oxmysql](https://github.com/overextended/oxmysql) is installed and started before this script.
 4. Configure the files as needed.
